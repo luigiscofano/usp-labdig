@@ -7,18 +7,18 @@
 - Processing em modo Java para a interface do Guardião.
 - Placa, fonte, sensor HC-SR04, servo e circuito de comunicação conforme a montagem documentada.
 
-Os QARs preservam projetos históricos completos. Restaure cada arquivo em uma pasta vazia. As versões podem conter top-level, parâmetros e pinagem diferentes. A edição organizada não gera automaticamente um QSF unificado, pois o material contém experimentos e revisões distintos.
+Os QARs históricos e o vídeo original não estão incluídos nesta edição pública. O gerador portátil usa os fontes organizados e mantém cada alvo separado.
 
 ## Sequência de reprodução
 
-1. Selecionar a experiência ou projeto e ler seu relatório.
-2. Restaurar o QAR e conferir o dispositivo e o top-level no Quartus.
-3. Conferir cada pino no manual da DE0-CV e no relatório escolhido.
-4. Comparar os fontes restaurados com a cópia organizada antes de aplicar correções.
-5. Executar análise, síntese e análise temporal.
+1. Selecionar a experiência ou projeto e ler seu relatório e README.
+2. Executar os testes de software e gerar o projeto: `quartus_sh -t scripts/gerar_quartus.tcl guardiao`.
+3. Abrir o QPF em `build/quartus/guardiao/` e confirmar dispositivo, top-level e clock de 50 MHz.
+4. Atribuir e conferir cada pino no manual da placa e na montagem escolhida; o gerador não atribui pinos físicos.
+5. Executar Analysis & Synthesis, Fitter e Timing Analyzer. Corrigir erros, latches inesperados e restrições ausentes antes de programar.
 6. Conferir alimentação, terra comum e adaptação de níveis antes de conectar periféricos.
 7. Programar a placa e testar cada periférico isoladamente.
-8. Integrar o jogo e registrar resultados e falhas observadas.
+8. Integrar o jogo e registrar resultados no [roteiro de aceitação](ACEITACAO_BANCADA.md).
 
 ## Interfaces elétricas
 
@@ -35,8 +35,8 @@ O servo deve usar alimentação adequada à corrente do dispositivo. Confira sua
 - Captura de quadro UART no equipamento.
 - Vídeo da edição corrigida em execução.
 
-O vídeo histórico preservado demonstra a montagem registrada pelo grupo, não a validação física das correções desta edição.
+Um vídeo histórico não comprova a validação física das correções desta edição.
 
 ## Projeto Quartus portátil desta edição
 
-Execute `quartus_sh -t scripts/gerar_quartus.tcl guardiao` a partir da raiz. O script aceita os treze alvos descritos em seu cabeçalho, reúne as dependências e cria QPF, QSF e uma restrição básica de clock de 50 MHz em `build/quartus/`. A pinagem e as restrições de E/S devem ser conferidas para a montagem escolhida. O script não foi executado no Quartus nesta sessão.
+Execute `quartus_sh -t scripts/gerar_quartus.tcl guardiao` a partir da raiz. O script aceita os treze alvos descritos em seu cabeçalho, reúne as dependências e cria QPF, QSF e uma restrição básica de clock de 50 MHz em `build/quartus/`. A pinagem e as restrições de E/S devem ser conferidas para a montagem escolhida. O script foi exercitado por Tcl com a API Quartus simulada nos treze alvos. Não foi executado no Quartus; síntese, QPF/QSF reais e timing permanecem pendentes.

@@ -1,0 +1,27 @@
+name: Falha de execução ou documentação
+description: Registrar um problema reproduzível em um experimento.
+body:
+  - type: input
+    id: experimento
+    attributes:
+      label: Experimento e revisão
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Passos para reproduzir
+      description: Informe comando, entradas, simulador e equipamento quando aplicável.
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado e resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidência
+      description: Inclua somente logs e imagens que você tem autorização para compartilhar.

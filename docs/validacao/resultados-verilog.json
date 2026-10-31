@@ -1,0 +1,132 @@
+{
+  "ferramenta": "Icarus Verilog",
+  "resultados": [
+    {
+      "nome": "guardiao",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "math-genius",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab1-exp03",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab1-exp04",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab1-exp05",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab1-exp06",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab2-servo",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab2-uart",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab1-exp01",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab1-exp02",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab2-exp03",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab2-exp04",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "lab2-exp05",
+      "tipo": "compilacao",
+      "passou": true,
+      "log": ""
+    },
+    {
+      "nome": "tb_componentes",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS conversoes, movimento e mensagens ASCII\ntests/tb_componentes.sv:43: $finish called at 2031000 (1ps)\n"
+    },
+    {
+      "nome": "tb_uart",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS UART 128 caracteres, paridade par, stop e reset\ntests/tb_uart.sv:24: $finish called at 136996000 (1ps)\n"
+    },
+    {
+      "nome": "tb_controle_guardiao",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS controle: vitoria, derrota, continuidade e luz\ntests/tb_controle_guardiao.sv:31: $finish called at 357000 (1ps)\n"
+    },
+    {
+      "nome": "tb_pacote",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS pacote UART integrado: O,123,045,P#\ntests/tb_pacote.sv:21: $finish called at 1042610000 (1ps)\n"
+    },
+    {
+      "nome": "tb_aquisicao",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS media de 1 a 4 amostras, timeout e validacao BCD\ntests/tb_aquisicao.sv:26: $finish called at 109000 (1ps)\n"
+    },
+    {
+      "nome": "tb_telemetria",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS telemetria trena e sonar com captura atomica\ntests/tb_telemetria.sv:32: $finish called at 12275000 (1ps)\n"
+    },
+    {
+      "nome": "tb_sonar_integrado",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS sonar integrado: 8 angulos, sensor sintetico e UART\ntests/tb_sonar_integrado.sv:30: $finish called at 37627230000 (1ps)\n"
+    },
+    {
+      "nome": "tb_pwm_contador",
+      "tipo": "simulacao",
+      "passou": true,
+      "log": "PASS contador e oito larguras PWM\ntests/tb_pwm_contador.sv:23: $finish called at 4936000 (1ps)\n"
+    }
+  ],
+  "limite": "Compilacao e simulacao digital. Sintese Quartus, temporizacao e hardware nao executados."
+}

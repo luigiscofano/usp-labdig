@@ -20,4 +20,4 @@ Use o [guia de bancada](HARDWARE.md), confira a placa e a pinagem do projeto esc
 
 ## Situação dos arquivos
 
-`originais/` mantém as versões recuperadas. `projetos/` e os diretórios `rtl/` das disciplinas contêm cópias selecionadas para estudo e compilação. [CORRECOES.md](CORRECOES.md) explica as alterações. Modelos vazios e tentativas parciais continuam no histórico, sem serem apresentados como solução final.
+`historico/` mantém os fontes Verilog recuperados. Os relatórios revisados estão em `docs/relatorios/`. `projetos/` e os diretórios `rtl/` das disciplinas contêm cópias selecionadas para estudo e compilação. [CORRECOES.md](CORRECOES.md) explica as alterações. Modelos vazios e tentativas parciais continuam no histórico, sem serem apresentados como solução final.

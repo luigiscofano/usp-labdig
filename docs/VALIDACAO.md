@@ -42,7 +42,7 @@ O verificador de Processing faz uma adaptação explícita do sketch para Java, 
 
 - Síntese Quartus, análise temporal, pinagem e programação de FPGA não foram executadas.
 - A interface Processing não foi aberta graficamente e não recebeu uma porta serial física.
-- Os arquivos QAR não foram restaurados nesta sessão. Permanecem disponíveis como revisões históricas.
+- Os arquivos QAR não foram restaurados nesta sessão nem republicados. O script de geração de projetos Quartus oferece uma alternativa baseada nos fontes e precisa ser conferido no Quartus.
 - O conjunto de testes não cobre todas as combinações de entradas nem todas as partidas do Math Genius e jogos de memória.
 - Os módulos homônimos históricos podem ter interfaces incompatíveis. Os conjuntos selecionados devem ser compilados separadamente.
 - A aquisição histórica repete tentativas quando nenhuma amostra é válida. Falhas persistentes e echo travado ainda exigem uma política global de recuperação e ensaio específico.

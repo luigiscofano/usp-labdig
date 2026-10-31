@@ -53,6 +53,10 @@ O primeiro comando compila treze alvos independentes e executa testes com asser�
 
 **Limite da validação:** compilação e simulação digital não equivalem a síntese Quartus, fechamento temporal, ensaio elétrico ou execução da interface gráfica. Consulte o [relatório de validação](docs/VALIDACAO.md) antes de usar uma versão em bancada.
 
+## Histórico completo dos códigos
+
+Os [210 arquivos Verilog recuperados](historico/README.md) estão separados das versões corrigidas. Rascunhos e variantes históricas permanecem identificados para não serem confundidos com os alvos validados.
+
 ## Navegação do código
 
 | Pasta | Uso |

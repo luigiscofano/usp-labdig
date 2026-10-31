@@ -1,0 +1,99 @@
+module exp4_unidade_controle_desafio (
+ input clock,
+ input reset,
+ input iniciar,
+ input fim,
+ input jogada,
+ input igual,
+ input timeOut,
+ output reg zeraC,
+ output reg contaC,
+ output reg zeraR,
+ output reg registraR,
+ output reg acertou,
+ output reg errou,
+ output reg pronto,
+ output reg [3:0] db_estado,
+ output reg entTO,
+ output reg db_Timeout
+);
+
+   // Define estados
+    parameter inicial          = 4'b0000;  // 0
+    parameter preparacao       = 4'b0001;  // 1
+    parameter espera           = 4'b0100;  // 4
+    parameter registra         = 4'b0101;  // 5
+    parameter comparacao       = 4'b0110;  // 6
+    parameter proximo          = 4'b0111;  // 7
+    parameter fimTimeOut       = 4'b1101;  // D
+    parameter fimGanhou        = 4'b1110;  // E
+    parameter fimPerdeu        = 4'b1111;  // F
+
+    // Variaveis de estado
+    reg [3:0] Eatual, Eprox;
+
+    // Memoria de estado
+    always @(posedge clock or posedge reset) begin
+        if (reset)
+            Eatual <= inicial;
+        else
+            Eatual <= Eprox;
+    end
+
+    // Logica de proximo estado
+    always @* begin
+        case (Eatual)
+            inicial:     Eprox = iniciar ? preparacao : inicial;
+            preparacao:  Eprox = espera;
+            espera:      begin
+                            case ({jogada, timeOut})
+                                2'b10 : Eprox = registra;
+                                2'b01 : Eprox = fimTimeOut;
+                                default : Eprox = espera;
+                            endcase
+                        end 
+            registra:    Eprox = comparacao;
+            comparacao:  begin
+                            case ({fim, igual})
+                                2'b01: Eprox = proximo;
+                                2'b11: Eprox = fimGanhou;
+                                default: Eprox = fimPerdeu;
+                            endcase
+                         end
+            proximo:     Eprox = espera;
+            fimGanhou:   Eprox = iniciar ? preparacao : fimGanhou;
+            fimPerdeu:   Eprox = iniciar ? preparacao : fimPerdeu;
+            fimTimeOut:  Eprox = iniciar ? preparacao : fimTimeOut;
+            default:     Eprox = inicial;
+        endcase
+    end
+
+    // Logica de saida (maquina Moore)
+    always @* begin
+        zeraC     = (Eatual == inicial || Eatual == preparacao) ? 1'b1 : 1'b0;
+        zeraR     = (Eatual == inicial || Eatual == preparacao) ? 1'b1 : 1'b0;
+        registraR = (Eatual == registra) ? 1'b1 : 1'b0;
+        contaC    = (Eatual == proximo) ? 1'b1 : 1'b0;
+        pronto    = (Eatual == fimPerdeu || Eatual ==   fimGanhou) ? 1'b1 : 1'b0;
+        errou     = (Eatual == fimPerdeu) ? 1'b1 : 1'b0;
+        acertou   = (Eatual == fimGanhou) ? 1'b1 : 1'b0;  //Só acende acertou quando acerta todas
+        entTO     = (Eatual == espera) ? 1'b1 : 1'b0;  //determinar time out
+        db_Timeout = (Eatual == fimTimeOut) ? 1'b1 : 1'b0;
+
+
+        case (Eatual)
+            inicial:     db_estado = 4'b0000;  // 0
+            preparacao:  db_estado = 4'b0001;  // 1
+            espera:      db_estado = 4'b0100;  // 4
+            registra:    db_estado = 4'b0101;  // 5
+            comparacao:  db_estado = 4'b0110;  // 6
+            proximo:     db_estado = 4'b0111;  // 7
+            fimTimeOut:  db_estado = 4'b1101;  // D
+            fimGanhou:   db_estado = 4'b1110;  // E
+            fimPerdeu:   db_estado = 4'b1111;  // F
+            default:     db_estado = 4'b1010;  // A (erro)
+        endcase
+    end
+
+
+ endmodule

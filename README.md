@@ -53,7 +53,7 @@ python scripts/verificar.py
 
 Esse comando compila treze alvos independentes e executa testes com asserções para conversões, movimento, mensagens ASCII, UART e controle do Guardião. Os resultados de simulação ficam em `build/resultados.json`.
 
-**Limite da validação:** compilação e simulação digital não equivalem a síntese Quartus, fechamento temporal, ensaio elétrico ou execução da interface gráfica. Consulte o [relatório de validação](docs/VALIDACAO.md) antes de usar uma versão em bancada.
+**Limite da validação:** compilação e simulação digital não equivalem a síntese Quartus, fechamento temporal, ensaio elétrico ou comunicação serial física. A interface gráfica também é testada em display virtual, com cenários de jogo, vitória, derrota e exportação CSV. Consulte o [relatório de validação](docs/VALIDACAO.md) antes de usar uma versão em bancada.
 
 ## Histórico completo dos códigos
 

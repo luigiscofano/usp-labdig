@@ -216,8 +216,8 @@ text("Snapshot: S | Planilha: X | Jogar (reset): J", 22, 132);
 
 void desenharSemaforo() {
 pushStyle();
-float cxRed = width/2 - 80;
-float cxGreen = width/2 + 80;
+float cxRed = width/2 - 20;
+float cxGreen = width/2 + 140;
 float cy = 105;
 float r = 50;
 

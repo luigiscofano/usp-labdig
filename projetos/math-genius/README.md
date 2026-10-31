@@ -1,5 +1,13 @@
 # Math Genius
 
+[Início](../../README.md) · [Como executar](../../README.md#como-executar) · [Aprendizagem](../../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../../README.md#estado-atual)
+
+> **Nesta área:** jogo aritmético independente, com ROMs e controles físicos; a compilação não equivale a teste completo de partida.
+
+[Início](../../README.md) · [Como executar](../../README.md#como-executar) · [Aprendizagem](../../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../../README.md#estado-atual)
+
+> **Nesta área:** jogo aritmético independente, com ROMs e controles físicos; a compilação não equivale a teste completo de partida.
+
 Jogo de desafios aritméticos em FPGA. ROMs armazenam operações, os controles físicos permitem construir uma resposta e a unidade de controle coordena a seleção de dificuldade, a confirmação e o feedback.
 
 ## Objetivos pedagógicos
@@ -43,3 +51,11 @@ Para a placa, restaure um QAR em diretório separado e confira a pinagem e os pe
 - Quando uma mudança de dificuldade pode alterar a rodada?
 - Qual é a faixa numérica dos registradores e o que acontece em uma operação fora dessa faixa?
 - O feedback permite revisar a estratégia ou apenas informa acerto e erro?
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `projetos/math-genius/`.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `projetos/math-genius/`.

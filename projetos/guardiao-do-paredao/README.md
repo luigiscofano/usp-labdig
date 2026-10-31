@@ -1,5 +1,13 @@
 # Guardião do Paredão
 
+[Início](../../README.md) · [Como executar](../../README.md#como-executar) · [Aprendizagem](../../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../../README.md#estado-atual)
+
+> **Nesta área:** jogo de avançar/parar, com sensor, servo, UART e interface Processing; simulação e bancada têm verificações distintas.
+
+[Início](../../README.md) · [Como executar](../../README.md#como-executar) · [Aprendizagem](../../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../../README.md#estado-atual)
+
+> **Nesta área:** jogo de avançar/parar, com sensor, servo, UART e interface Processing; simulação e bancada têm verificações distintas.
+
 Jogo físico de avançar e parar, implementado com FPGA, sensor ultrassônico, servomotor e interface no computador. O guardião alterna a indicação para movimento e espera. O circuito mede a posição, avalia o deslocamento e transmite dados da rodada.
 
 ## Objetivos pedagógicos
@@ -46,7 +54,7 @@ Abra `processing/Guardiao/Guardiao.pde` no Processing, em modo Java, com a bibli
 | `X` | Ativar/desativar registro CSV |
 | `S` | Salvar snapshot do histórico |
 
-O código é uma recuperação do documento original. A adaptação Java foi compilada com bibliotecas reais e sua lógica foi testada sem janela. A interface gráfica e o acesso à porta serial não foram executados neste ambiente. A instalação do Processing deve ser verificada localmente.
+O código é uma recuperação do documento original. A adaptação Java foi compilada com bibliotecas reais; a lógica e a interface Java2D foram testadas, incluindo display virtual, vitória/derrota e exportação. A porta serial física continua sem ensaio nesta edição. Consulte a validação na raiz antes de usar em bancada.
 
 ## Interface com FPGA
 
@@ -61,3 +69,11 @@ Ainda exigem ensaio: pinagem, níveis elétricos, montagem, ruído do sensor, te
 ## Atividade pedagógica sugerida
 
 Peça ao aluno que explique uma derrota possível e identifique sua causa: movimento real, tolerância inadequada ou erro de medição. Depois, compare uma rodada com e sem ruído simulado. O exercício conecta a regra do jogo à responsabilidade de validar um sistema que interage com pessoas.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `projetos/guardiao-do-paredao/`.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `projetos/guardiao-do-paredao/`.

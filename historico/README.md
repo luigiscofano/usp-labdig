@@ -1,5 +1,13 @@
 # Histórico dos códigos recuperados
 
+[Início](../README.md) · [Como executar](../README.md#como-executar) · [Aprendizagem](../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../README.md#estado-atual)
+
+> **Nesta área:** versões e rascunhos preservados; selecione a implementação de trabalho indicada na raiz antes de compilar.
+
+[Início](../README.md) · [Como executar](../README.md#como-executar) · [Aprendizagem](../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../README.md#estado-atual)
+
+> **Nesta área:** versões e rascunhos preservados; selecione a implementação de trabalho indicada na raiz antes de compilar.
+
 Esta pasta reúne os 210 arquivos Verilog recuperados, com seus cabeçalhos e créditos. Ela preserva o processo de desenvolvimento, incluindo versões parciais e variantes de testes. Os textos foram normalizados para UTF-8, sem aplicar correções funcionais aos rascunhos.
 
 As cópias organizadas e corrigidas ficam nas pastas dos projetos e experimentos. Os 13 alvos e testes automatizados se referem à edição organizada. Alguns rascunhos dependem de módulos em outras pastas, possuem nomes repetidos ou usam interfaces antigas. Consulte a validação antes de escolher um conjunto.
@@ -29,3 +37,11 @@ As cópias organizadas e corrigidas ficam nas pastas dos projetos e experimentos
 - [labdig-ii/semana-final/componentes-verilog/medidor_distancia](labdig-ii/semana-final/componentes-verilog/medidor_distancia/README.md)
 - [labdig-ii/semana-final/componentes-verilog/testbenches](labdig-ii/semana-final/componentes-verilog/testbenches/README.md)
 - [labdig-ii/semana-final/componentes-verilog/transmissor](labdig-ii/semana-final/componentes-verilog/transmissor/README.md)
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `historico/`.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `historico/`.

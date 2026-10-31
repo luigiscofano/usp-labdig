@@ -1,5 +1,13 @@
 # Laboratório Digital II
 
+[Início](../README.md) · [Como executar](../README.md#como-executar) · [Aprendizagem](../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../README.md#estado-atual)
+
+> **Nesta área:** conteúdo da área “Laboratório Digital II” dentro de Laboratório Digital I e II · Circuitos, jogos e FPGA; use o guia inicial para localizar a execução e as relações entre módulos.
+
+[Início](../README.md) · [Como executar](../README.md#como-executar) · [Aprendizagem](../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../README.md#estado-atual)
+
+> **Nesta área:** conteúdo da área “Laboratório Digital II” dentro de Laboratório Digital I e II · Circuitos, jogos e FPGA; use o guia inicial para localizar a execução e as relações entre módulos.
+
 ## Percurso de aprendizagem
 
 | Atividade | Tema | Objetivo pedagógico |
@@ -15,3 +23,11 @@
 [Guardião do Paredão](../projetos/guardiao-do-paredao/README.md): integrar medição, atuação e comunicação em um jogo.
 
 [Documentos](../docs/ACERVO.md) · [Validação](../docs/VALIDACAO.md) · [Objetivos pedagógicos](../docs/OBJETIVOS_PEDAGOGICOS.md)
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `labdig-2/`.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `labdig-2/`.

@@ -1,5 +1,13 @@
 # Experiência 04 · Trena digital com serial
 
+[Início](../../../README.md) · [Como executar](../../../README.md#como-executar) · [Aprendizagem](../../../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../../../README.md#estado-atual)
+
+> **Nesta área:** experiência independente “Experiência 04 · Trena digital com serial”; selecione seus módulos e não misture versões homônimas do acervo.
+
+[Início](../../../README.md) · [Como executar](../../../README.md#como-executar) · [Aprendizagem](../../../README.md#o-que-desenvolvi-e-aprendi) · [Estado atual](../../../README.md#estado-atual)
+
+> **Nesta área:** experiência independente “Experiência 04 · Trena digital com serial”; selecione seus módulos e não misture versões homônimas do acervo.
+
 ## Objetivo pedagógico
 
 **Combinar medição, representação BCD e envio de caracteres ASCII.**
@@ -23,3 +31,11 @@ Há uma cópia de trabalho compilável nesta edição. Consulte a [procedência 
 3. Antecipar a saída em um caso normal e um caso de fronteira.
 4. Comparar a previsão com uma simulação.
 5. Registrar o que depende de montagem física para ser confirmado.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../../../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `labdig-2/experimentos/exp-04/`.
+
+---
+
+**Projeto:** [Laboratório Digital I e II · Circuitos, jogos e FPGA](../../../README.md). Consulte a raiz para os requisitos e o primeiro comando; este guia aprofunda a área `labdig-2/experimentos/exp-04/`.

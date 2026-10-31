@@ -2,7 +2,7 @@
 
 ## Materiais do projeto
 
-Os guias foram preparados a partir dos trabalhos de LabDig I e II. Os relatórios históricos e anexos ainda não integram a edição pública.
+Os guias foram preparados a partir dos trabalhos de LabDig I e II. A edição pública inclui versões revisadas dos relatórios e fontes históricos. Capturas e anexos privados foram substituídos por diagramas e materiais reproduzíveis desta edição.
 
 ## Documentação técnica oficial
 

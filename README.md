@@ -6,11 +6,13 @@
 
 **Verilog · FPGA DE0-CV · Máquinas de estados · Processing · Serious games**
 
-[Começar](docs/COMECE_AQUI.md) · [Objetivos pedagógicos](docs/OBJETIVOS_PEDAGOGICOS.md) · [Projetos](#projetos-em-destaque) · [Documentos](docs/ACERVO.md) · [Validação](docs/VALIDACAO.md)
+[![Verificação digital](https://github.com/luigiscofano/usp-labdig/actions/workflows/verificacao.yml/badge.svg)](https://github.com/luigiscofano/usp-labdig/actions)
+
+[Começar](docs/COMECE_AQUI.md) · [Objetivos pedagógicos](docs/OBJETIVOS_PEDAGOGICOS.md) · [Projetos](#projetos-em-destaque) · [Documentos](docs/DOCUMENTOS.md) · [Validação](docs/VALIDACAO.md)
 
 </div>
 
-Acervo organizado dos trabalhos de **Laboratório Digital I e II** da Escola Politécnica da USP. Reúne experimentos, código Verilog, testbenches, projetos Quartus, interface Processing e materiais de apresentação.
+Acervo organizado dos trabalhos de **Laboratório Digital I e II** da Escola Politécnica da USP. Reúne experimentos, código Verilog, testbenches, geração de projetos Quartus, interface Processing e materiais de apresentação.
 
 **Aprender construindo:** especificar um comportamento, dividi-lo em controle e fluxo de dados, simular seus casos de uso e confrontar a implementação com o que acontece no circuito físico.
 
@@ -31,7 +33,7 @@ Os objetivos dos jogos são **intenções de design educacional**. Este acervo n
 | Projeto | Experiência | Material |
 | --- | --- | --- |
 | **[Math Genius](projetos/math-genius/README.md)** | Desafios matemáticos com dificuldade selecionável, ROMs e resposta por controles físicos | RTL, guia, documentação e versões históricas |
-| **[Guardião do Paredão](projetos/guardiao-do-paredao/README.md)** | Jogo de avançar e parar com sensor de distância, servo, sinalização e telemetria | RTL, Processing, protocolo, testes, relatórios e vídeo |
+| **[Guardião do Paredão](projetos/guardiao-do-paredao/README.md)** | Jogo de avançar e parar com sensor de distância, servo, sinalização e telemetria | RTL, Processing, protocolo, testes e relatórios |
 
 ## Disciplinas e experimentos
 
@@ -49,7 +51,7 @@ Instale Python 3 e Icarus Verilog (`iverilog` e `vvp` no PATH). No diretório do
 python scripts/verificar.py
 ```
 
-O primeiro comando compila treze alvos independentes e executa testes com asserções para conversões, movimento, mensagens ASCII, UART e controle do Guardião. Os resultados de simulação ficam em `build/resultados.json`.
+Esse comando compila treze alvos independentes e executa testes com asserções para conversões, movimento, mensagens ASCII, UART e controle do Guardião. Os resultados de simulação ficam em `build/resultados.json`.
 
 **Limite da validação:** compilação e simulação digital não equivalem a síntese Quartus, fechamento temporal, ensaio elétrico ou execução da interface gráfica. Consulte o [relatório de validação](docs/VALIDACAO.md) antes de usar uma versão em bancada.
 
@@ -64,10 +66,10 @@ Os [210 arquivos Verilog recuperados](historico/README.md) estão separados das 
 | `projetos/` | Cópias de trabalho organizadas de Math Genius e Guardião |
 | `labdig-1/` e `labdig-2/` | Guias dos experimentos e alvos de compilação |
 | `tests/` | Testes automatizados com critérios explícitos de aprovação |
-| `scripts/` | Verificação e integridade do acervo |
-| `docs/` | Objetivos, guias, documentos, correções e inventário |
+| `scripts/` | Verificação, dependências e geração de projetos Quartus |
+| `docs/` | Objetivos, guias, relatórios revisados e correções |
 | `apresentacoes/` | Material de exposição do projeto |
-| `originais/` | Histórico recuperado, sem aplicar correções aos fontes |
+| `historico/` | Todos os fontes recuperados, com versões e rascunhos separados |
 
 Compile cada projeto separadamente. Consulte a [procedência das implementações](docs/IMPLEMENTACOES.md) para identificar os códigos novos.
 

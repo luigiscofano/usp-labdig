@@ -21,7 +21,7 @@ Os experimentos 3–5 de LabDig II usam os componentes recuperados de `projetos/
 
 ## Alcance das novas versões
 
-A trena realiza uma aquisição por solicitação e transmite `ddd#`. O sonar realiza uma varredura de oito posições, de 20 a 160 graus, e transmite `aaa,ddd#`. Essas versões implementam o núcleo descrito nos relatórios. Os desafios adicionais e os arquivos Quartus históricos continuam no acervo e não foram considerados equivalentes sem comparação em bancada.
+A trena realiza uma aquisição por solicitação e transmite `ddd#`. O sonar realiza uma varredura de oito posições, de 20 a 160 graus, e transmite `aaa,ddd#`. Essas versões implementam o núcleo descrito nos relatórios. Os fontes dos desafios adicionais permanecem no histórico. Os arquivos Quartus históricos não foram republicados; o gerador de projetos desta edição oferece uma alternativa para os alvos selecionados, ainda sujeita a conferência em bancada.
 
 O `.qar` conserva uma revisão Quartus. Sua presença não significa que todos os fontes internos foram extraídos ou que aquela revisão passou pelos novos testes. Para comparar a versão histórica com a organizada, restaure o QAR no Quartus e confira os módulos e parâmetros.
 

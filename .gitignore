@@ -1,0 +1,9 @@
+build/
+__pycache__/
+*.pyc
+*.vcd
+*.fst
+*.vvp
+csv_*.csv
+snapshot_*.csv
+.DS_Store

@@ -14,9 +14,20 @@ Verilog descreve o comportamento de um circuito, em vez de ser um aplicativo com
 
 ## Qual problema resolve
 
+<details>
+<summary>Expandir qual problema resolve</summary>
+
 O acervo conecta especificação, máquina de estados, fluxo de dados e evidência de funcionamento. A organização separa **13 alvos independentes** de suas versões históricas, evitando misturar módulos homônimos que pertencem a circuitos diferentes. Os relatórios explicam decisões; os testes permitem reproduzir parte das verificações.
 
+
+</details>
+
+---
+
 ## Funcionalidades e módulos
+
+<details>
+<summary>Expandir funcionalidades e módulos</summary>
 
 ### 1. LabDig I — fundamentos e jogos sequenciais
 
@@ -55,7 +66,15 @@ A interface Processing no computador mostra o estado do jogo, histórico e expor
 
 Os componentes reutilizáveis apoiam os experimentos; o gerador Tcl prepara projetos Quartus a partir dos fontes públicos. O histórico reúne **210 fontes Verilog recuperados**, incluindo variantes e rascunhos. Os **31 relatórios revisados** e as apresentações oferecem contexto técnico. Não são versões equivalentes de um único circuito: escolha um alvo e siga suas dependências.
 
+
+</details>
+
+---
+
 ## Como executar
+
+<details>
+<summary>Expandir como executar</summary>
 
 ### Simular, sem FPGA
 
@@ -108,13 +127,29 @@ python scripts/verificar_processing.py --classpath "$classpathProcessing"
 
 Com Quartus instalado, `quartus_sh -t scripts/gerar_quartus.tcl guardiao` prepara arquivos em `build/quartus/`. É preciso conferir dispositivo, clock, pinagem, níveis elétricos e temporização antes de programar a FPGA. Para serial física, configure a porta real e o protocolo **115200, 7E1**. Os roteiros de [hardware](docs/HARDWARE.md) e [aceitação em bancada](docs/ACEITACAO_BANCADA.md) descrevem essas etapas.
 
+
+</details>
+
+---
+
 ## O que desenvolvi e aprendi
+
+<details>
+<summary>Expandir o que desenvolvi e aprendi</summary>
 
 O portfólio reúne trabalhos em grupo, organização dos fontes e relatórios, correções e implementações de apoio documentadas. As competências incluem máquinas de estados, separação entre controle e dados, comunicação, sensor/atuador, testes com asserções e rastreabilidade entre requisitos e sinais. [IMPLEMENTACOES.md](docs/IMPLEMENTACOES.md) identifica a origem das partes desta edição.
 
 **Objetivo pedagógico central:** explicar uma rodada ou medição do começo ao fim, indicar o sinal que causa cada transição e reproduzir uma falha com um testbench. O [guia pedagógico](docs/OBJETIVOS_PEDAGOGICOS.md) também diferencia objetivos do estudante e objetivos dos jogos.
 
+
+</details>
+
+---
+
 ## Estado atual
+
+<details>
+<summary>Expandir estado atual</summary>
 
 | Verificação | Situação |
 | --- | --- |
@@ -125,11 +160,27 @@ O portfólio reúne trabalhos em grupo, organização dos fontes e relatórios, 
 | FPGA e periféricos reais | Síntese, timing, pinagem e aceitação física ainda precisam ser executados |
 | Math Genius e jogos de memória | Sem cobertura completa de partidas |
 
+
+</details>
+
+---
+
 ## Validação e limites
+
+<details>
+<summary>Expandir validação e limites</summary>
 
 Simulação digital não certifica montagem, ruído de sensor, servo físico ou comunicação serial real. A aquisição ainda exige análise de falhas persistentes e echo travado. Os resultados, comandos e limites específicos estão em [VALIDACAO.md](docs/VALIDACAO.md). Os objetivos dos jogos não equivalem a avaliação clínica ou pedagógica com participantes.
 
+
+</details>
+
+---
+
 ## Documentação e navegação
+
+<details>
+<summary>Expandir documentação e navegação</summary>
 
 | Caminho | Conteúdo |
 | --- | --- |
@@ -140,11 +191,32 @@ Simulação digital não certifica montagem, ruído de sensor, servo físico ou 
 | [Apresentações](apresentacoes/README.md) | Roteiro e versão HTML |
 | [Comece aqui](docs/COMECE_AQUI.md) / [documentação](docs/README.md) | Índices, diagramas, correções e guias |
 
+
+</details>
+
+---
+
 ## Autoria, referências e licença
+
+<details>
+<summary>Expandir autoria, referências e licença</summary>
 
 Organização do portfólio: **Luigi Scofano de Araujo · USP 13680334**. Os projetos e componentes mantêm os créditos de seus grupos e autores. A documentação diferencia fontes históricos, correções e implementações novas, sem aplicar uma licença geral nova aos materiais de terceiros. Consulte [acervo](docs/ACERVO.md) e [procedência](docs/IMPLEMENTACOES.md).
 
 
+
+</details>
+
+---
+
 ## Tópicos do repositório
 
+<details>
+<summary>Expandir tópicos do repositório</summary>
+
 `verilog` · `systemverilog` · `fpga` · `digital-design` · `finite-state-machine` · `uart` · `pwm` · `icarus-verilog` · `processing` · `educational-games` · `usp`
+
+</details>
+
+---
+
